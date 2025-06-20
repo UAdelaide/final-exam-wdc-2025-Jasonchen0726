@@ -131,7 +131,7 @@ app.get('/api/dogs',async(req,res)=>{
     `);
     res.json(rows);
     }catch(err){
-        res
+        res.status(500).json({error:})
     }
 }
 
