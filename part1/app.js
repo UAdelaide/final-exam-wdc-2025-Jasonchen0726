@@ -80,13 +80,13 @@ let db;
         applied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         status ENUM('pending', 'accepted', 'rejected') DEFAULT 'pending',
         FOREIGN KEY (request_id) REFERENCES WalkRequests(request_id),
-          FOREIGN KEY (walker_id) REFERENCES Users(user_id),
-          CONSTRAINT unique_application UNIQUE (request_id, walker_id)
+        FOREIGN KEY (walker_id) REFERENCES Users(user_id),
+        CONSTRAINT unique_application UNIQUE (request_id, walker_id)
       )
     `);
 
         await db.execute(`
-      CREATE TABLE IF NOT EXISTS WalkRatings (
+        CREATE TABLE IF NOT EXISTS WalkRatings (
         rating_id INT AUTO_INCREMENT PRIMARY KEY,
         request_id INT NOT NULL,
         walker_id INT NOT NULL,
@@ -110,7 +110,7 @@ let db;
 
         // insert table data
         await db.execute(`
-      INSERT INTO Users (username, email, password_hash, role) VALUES
+        INSERT INTO Users (username, email, password_hash, role) VALUES
       ('alice123', 'alice@example.com', 'hashed123', 'owner'),
       ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
       ('carol123', 'carol@example.com', 'hashed789', 'owner'),
