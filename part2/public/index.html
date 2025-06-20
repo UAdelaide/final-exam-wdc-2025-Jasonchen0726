@@ -68,7 +68,7 @@
         return {
           message: 'Welcome to the Dog Walking Service!',
 
-          // data holder for user input in the form 
+          // data holder for user input in the form
           username: '',
           password: '',
           dogs: []
@@ -101,6 +101,7 @@
           }
         },
 
+        // 
         async userLogin() {
           try {
             const response = await fetch('/api/users/login', {
