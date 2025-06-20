@@ -123,7 +123,7 @@ let db;
     }
 })();
 
-app.get('/api/dogs',async)
+app.get('/api/dogs',async(req,res)
 
 
 
