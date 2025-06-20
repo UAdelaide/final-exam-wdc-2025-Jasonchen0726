@@ -60,7 +60,9 @@
               throw new Error('Not logged in');
             }
             const data=await res.json();
-            userId.value=
+            userId.value=data.id
+          }catch(err){
+            alert()
           }
         }
 
