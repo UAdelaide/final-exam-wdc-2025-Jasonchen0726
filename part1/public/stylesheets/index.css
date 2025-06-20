@@ -23,3 +23,10 @@ body {
     width: 80px;
 
 }
+
+.first_text{
+                font-family: 'Comic Sans MS', cursive, sans-serif;
+                font-size: small;
+                color: red;
+}
+
