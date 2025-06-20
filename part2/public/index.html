@@ -37,30 +37,31 @@
 
 
     <div class="dog-section">
-    <h2 class="section-title"> All registered Dogs</h2>
-    <table class="dog-table" v-if="dogs.length > 0">
+      <h2 class="section-title"> All registered Dogs</h2>
+      <table class="dog-table" v-if="dogs.length > 0">
 
-      <thead>
-        <tr>
-          <th>Dog ID</th>
-          <th>Name</th>
-          <th>Size</th>
-          <th>Owner ID</th>
-          <th>Photo</th>
-        </tr>
+        <thead>
+          <tr>
+            <th>Dog ID</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Owner ID</th>
+            <th>Photo</th>
+          </tr>
 
-      </thead>
-      <tbody>
-        <tr v-for="dog in dogs" :key="dog.dog_id">
-          <td></td>
-          <td>{{dog.name}}</td>
-          <td>{{dog.size}}</td>
-          <td><img :src="dog.photo" alt="Dog photo" class="dog-photo" /></td>
-        </tr>
+        </thead>
+        <tbody>
+          <tr v-for="dog in dogs" :key="dog.dog_id">
+            <td>{{dog.dog_id}}</td>
+            <td>{{dog.name}}</td>
+            <td>{{dog.size}}</td>
+            <td>{{ dog.owner_id }}</td>
+            <td><img :src="dog.photo" alt="Dog photo" class="dog-photo" /></td>
+          </tr>
 
-      </tbody>
-    </table>
-    <p v-else class="no-dogs-text">No dogs to display yet.</p>
+        </tbody>
+      </table>
+      <p v-else class="no-dogs-text">No dogs to display yet.</p>
     </div>
 
   </div>
