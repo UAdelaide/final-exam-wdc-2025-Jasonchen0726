@@ -168,8 +168,10 @@ app.get('/api/walkrequests/open', async (req, res) => {
 app.get('/api/walkers/summary',async(req,res)=>{
     try{
         const[rows]=await db.execute(` `)
+
+        res.json(rows);
     } catch(err){
-        res.status(500).json({error: })
+        res.status(500).json({error: 'api failed for summary requests'});
     }
 })
 
