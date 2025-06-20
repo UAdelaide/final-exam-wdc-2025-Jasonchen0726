@@ -12,7 +12,7 @@ createApp({
             try{
                 const res=await fetch('https://dog.ceo/api/breeds/image/random');
                 const data=await res.json();
-                this 
+                this dogImage=data.message;
             }
         }
     }
