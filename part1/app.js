@@ -109,7 +109,9 @@ let db;
 
 
     await db.execute(`
-      INSERT INTO Dogs (owner_id,name,size)
+      INSERT INTO Dogs (owner_id,name,size) VALUES
+
+      
     `)
 
 
