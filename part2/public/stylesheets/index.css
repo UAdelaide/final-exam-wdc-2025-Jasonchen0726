@@ -16,5 +16,6 @@
 .login-container h2{
     text-align: center;
     color: black;
-    
+    margin-bottom: 2em;
+          font-size: 2rem;
 }
