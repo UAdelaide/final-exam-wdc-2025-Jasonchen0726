@@ -149,7 +149,7 @@
 
         onMounted( async() => {
           try{
-            const verify=
+            const verify=await fetch('/api/users/me')
           }
           loadWalks();
         });
