@@ -101,7 +101,8 @@
           }
         },
 
-        // function for user login 
+        // function for user login, it fetch a post method from the backend
+        // 
         async userLogin() {
           try {
             const response = await fetch('/api/users/login', {
