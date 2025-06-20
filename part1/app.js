@@ -136,17 +136,16 @@ let db;
         ((SELECT dog_id FROM Dogs WHERE name='Max'), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
         ((SELECT dog_id FROM Dogs WHERE name='Bella'), '2025-06-10 09:30:00', 45, 'Beachside Ave', 'accepted'),
         ((SELECT dog_id FROM Dogs WHERE name = 'Bob'), '2025-06-10 10:30:00', 60, 'King Ave', 'completed'),
-((SELECT dog_id FROM Dogs WHERE name = 'Toby'), '2025-06-10 11:30:00', 75, 'First Ave', 'cancelled'),
-((SELECT dog_id FROM Dogs WHERE name = 'Jedi'), '2025-06-10 12:30:00', 90, 'City Park', 'open')
+        ((SELECT dog_id FROM Dogs WHERE name = 'Toby'), '2025-06-10 11:30:00', 75, 'First Ave', 'cancelled'),
+        ((SELECT dog_id FROM Dogs WHERE name = 'Jedi'), '2025-06-10 12:30:00', 90, 'City Park', 'open')
 
     `);
 
         await db.execute(`INSERT INTO WalkRatings (request_id,walker_id,owner_id,rating,comments) VALUES (
-
     (SELECT request_id FROM WalkRequests WHERE dog_id=(SELECT dog_id FROM Dogs WHERE name='Bob')),
     (SELECT user_id FROM Users WHERE username='bobwalker'),
-        (SELECT user_id FROM Users WHERE username = 'bobwalker'),
-        5,'no comments'
+    (SELECT user_id FROM Users WHERE username = 'bobwalker'),
+    5,'no comments'
 
         )
 
