@@ -1,4 +1,4 @@
-.login-container {
+form {
     background: white;
     padding: 2.5rem;
     border-radius: 14px;
@@ -8,27 +8,23 @@
     margin: 2rem auto;
 }
 
-.login-container button:hover {
-    background-color: #0056b3;
-}
-
-
-.login-container h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 2em;
-    font-size: 2rem;
-}
-
-
-.login-container label {
+form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-.login-container button {
+form input {
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+form button {
     width: 100%;
     padding: 1rem;
     font-size: 1.2rem;
@@ -39,15 +35,9 @@
     cursor: pointer;
 }
 
-.login-container input {
-    width: 100%;
-    padding: 1em;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
+form button:hover {
+    background-color: #0056b3;
 }
-
 
 
 
