@@ -55,7 +55,7 @@ let db;
       )
     `);
 
-    await db.execute(`CREATE TABLE IF NOT EXISTS WALKREQUEST`)
+    await db.execute(`CREATE TABLE IF NOT EXISTS WalkRequests`)
 
 
         }
