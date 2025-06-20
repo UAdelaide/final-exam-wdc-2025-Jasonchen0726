@@ -96,8 +96,7 @@ router.get('/mydogs',async(req,res) => {
 
 router.get('/api/dogs', async (req, res) => {
     try {
-
-    );
+const [rows] = await db.query('SELECT dog_id, name, size FROM Dogs');
         res.json(rows);
     } catch (err) {
         res.status(500).json({ error: 'api failed' });
