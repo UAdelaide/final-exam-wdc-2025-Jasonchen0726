@@ -149,7 +149,10 @@
 
         onMounted( async() => {
           try{
-            const verify=await fetch('/api/users/me')
+            const verify=await fetch('/api/users/me');
+            if(!verify.ok){
+              window.location
+            }
           }
           loadWalks();
         });
