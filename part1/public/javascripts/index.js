@@ -8,6 +8,8 @@ createApp({
         };
     },
     methods(){
-        async getImage
+        async getImage(){
+            
+        }
     }
 })
