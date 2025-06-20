@@ -97,7 +97,7 @@
           location: ''
         });
 
-        const dogs=ref([]);
+        const dogs = ref([]);
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
@@ -111,16 +111,16 @@
           }
         }
 
-        async function loadDogs(){
-          try{
-            const res=await fetch('/api/user/mydogs');
-            if(!res.ok){
-
+        async function loadDogs() {
+          try {
+            const res = await fetch('/api/user/mydogs');
+            if (!res.ok) {
+              throw new Error('fail to load dogs');
 
             }
-            dogs.value=await res.json();
+            dogs.value = await res.json();
 
-          }catch(err){
+          } catch (err) {
             console.log("Error to load dogs")
           }
         }
@@ -178,7 +178,7 @@
           try {
             const verify = await fetch('/api/users/me');
             if (!verify.ok) {
-             alert("You are not log in");
+              alert("You are not log in");
               window.location.href = 'index.html';
               return;
             }
