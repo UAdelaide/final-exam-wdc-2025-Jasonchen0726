@@ -10,7 +10,7 @@ createApp({
     methods(){
         async getImage(){
             try{
-                const res=await fetch('http')
+                const res=await fetch('https://dog.ceo/api/breeds/image/random')
             }
         }
     }
