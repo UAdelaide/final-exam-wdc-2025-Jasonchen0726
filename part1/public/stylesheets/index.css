@@ -24,18 +24,18 @@ body {
 
 }
 
-.first_text{
-                font-family: 'Comic Sans MS', cursive, sans-serif;
-                font-size: small;
-                color: red;
+.first_text {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: small;
+    color: red;
 }
 
-.second_text{
-                font-family: 'Times New Roman', Times, serif;
+.second_text {
+    font-family: 'Times New Roman', Times, serif;
     font-size: large;
     color: blue;
 }
 
-h1{
+h1 {
     text-align: center;
 }
