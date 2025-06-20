@@ -168,7 +168,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
 app.get('/api/walkers/summary',async(req,res)=>{
     try{
         const[rows]=await db.execute(` `)
-    } catch(err)
+    } catch(err){
+        res.status(500).json({error: })
+    }
 })
 
 
