@@ -41,35 +41,35 @@ form button:hover {
 
 
 
-.no-dogs-text{
-    text-align:center;
+.no-dogs-text {
+    text-align: center;
 }
 
 .dog-photo {
-  width: 150px;
-  border-radius: 8px;
+    width: 150px;
+    border-radius: 8px;
 }
 
-.dog-section{
-    margin-top:50px;
-    padding:20px;
+.dog-section {
+    margin-top: 50px;
+    padding: 20px;
 }
 
-.section-title{
-    text-align:center;
-      margin-bottom: 30px;
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .dog-table {
-        max-width: 600px;
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .dog-table th,
-.dog-table td{
-      border: 1px solid #ccc;
-  padding: 10px;
+.dog-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
 }
