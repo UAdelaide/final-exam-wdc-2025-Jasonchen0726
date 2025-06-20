@@ -78,7 +78,9 @@
 
         async function applyToWalk(requestId) {
           try {
-if(!user)
+if(!userId.value){
+  throw new Error("U")
+}
 
             const res = await fetch(`/api/walks/${requestId}/apply`, {
               method: 'POST',
