@@ -55,7 +55,7 @@ let db;
       )
     `);
 
-    await db.execute(`)
+    await db.execute(`CREATE`)
 
 
         }
