@@ -123,22 +123,17 @@ let db;
     }
 })();
 
-app.get('/api/dogs',async(req,res)=>{
-    try{
-        const [rows]=await db.execute(`
+app.get('/api/dogs', async (req, res) => {
+    try {
+        const [rows] = await db.execute(`
       SELECT d.dog_id, d.name, d.size, u.username AS owner
       FROM Dogs d JOIN Users u ON d.owner_id = u.user_id
     `);
-    res.json(rows);
-    }catch(err){
-        res.status(500).json({error:'api failed'});
+        res.json(rows);
+    } catch (err) {
+        res.status(500).json({ error: 'api failed' });
     }
 });
-
-
-
-
-
 
 app.use(express.static(path.join(__dirname, 'public')));
 
