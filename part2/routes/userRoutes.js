@@ -79,7 +79,9 @@ router.post('/logout', (req, res) => {
   });
 });
 
-router.get('/mydogs')
+router.get('/mydogs',async(req,res) =>{
+  
+})
 
 
 
