@@ -76,6 +76,7 @@ router.post('/login', async (req, res) => {
 });
 
 
+//
 
 router.post('/logout', (req, res) => {
   req.session.destroy(err => {
@@ -86,6 +87,10 @@ router.post('/logout', (req, res) => {
     res.json({ message: 'Logged out' });
   });
 });
+
+
+
+
 
 router.get('/mydogs',async(req,res) => {
   if(!req.session.user){
