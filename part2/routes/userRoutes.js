@@ -84,7 +84,9 @@ router.get('/mydogs',async(req,res) =>{
     return res.status(401).json({error: 'not login in'});
   }
   const ownerId=req.session.user.id;
-  try
+  try{
+    cons
+  }
 })
 
 
