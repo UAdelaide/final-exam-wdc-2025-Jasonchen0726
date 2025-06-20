@@ -147,15 +147,16 @@
 
 
 
-        onMounted( async() => {
-          try{
-            const verify=await fetch('/api/users/me');
-            if(!verify.ok){
-              window.location.href='index.html';
+        onMounted(async () => {
+          try {
+            const verify = await fetch('/api/users/me');
+            if (!verify.ok) {
+              window.location.href = 'index.html';
               return;
             }
-          }catch(err){
-            
+          } catch (err) {
+            window.location.href = 'index.html';
+            return;
           }
           loadWalks();
         });
