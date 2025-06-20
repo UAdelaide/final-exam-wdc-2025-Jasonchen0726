@@ -11,7 +11,7 @@ form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1;
 }
 
 form input {
@@ -24,7 +24,7 @@ form input {
 }
 
 form button {
-    height: 80px;
+
     width: 100px;
     padding: 10px;
     font-size: 20px;
