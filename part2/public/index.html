@@ -103,8 +103,8 @@
 
         // function for user login, it fetch a post method from the backend
         // it sends the username and the password and wait for the route response
-        // if the response is ok, it will check the role of the user that has successful login
-        // Then direct them
+        // if the response is ok, it will check the role of the user that has successfully login
+        // Then direct them to the corresponding page
         async userLogin() {
           try {
             const response = await fetch('/api/users/login', {
