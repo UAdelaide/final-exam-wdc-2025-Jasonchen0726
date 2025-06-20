@@ -113,7 +113,7 @@
 
         async function loadDogs() {
           try {
-            const res = await fetch('/api/user/mydogs');
+            const res = await fetch('/api/users/mydogs');
             if (!res.ok) {
               throw new Error('fail to load dogs');
 
