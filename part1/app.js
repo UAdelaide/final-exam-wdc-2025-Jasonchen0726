@@ -135,7 +135,7 @@ let db;
 
     `);
 
-await db.execute()
+await db.execute(`INSERT INTO WalkRatings)
 
 
 
