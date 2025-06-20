@@ -13,9 +13,13 @@ body {
 }
 
 
-.button{
+.button {
     font-size: 13px;
     cursor: pointer;
-    position: fixed;
-    
+    position: inherit;
+    bottom: 20px;
+    right: 20px;
+    height: 30px;
+    width: 80px;
+
 }
