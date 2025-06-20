@@ -116,7 +116,6 @@ let db;
         ('carol123', 'carol@example.com', 'hashed789', 'owner'),
         ('jason123', 'jason@hotmail.com', 'hashed234', 'walker'),
         ('jack123', 'jack@hotmail.com', 'hashed678', 'owner')
-
     `);
 
 
@@ -127,8 +126,7 @@ let db;
         ((SELECT user_id FROM Users WHERE username='carol123'), 'Bella', 'small'),
         ((SELECT user_id FROM Users WHERE username = 'jason123'), 'Toby', 'large'),
         ((SELECT user_id FROM Users WHERE username = 'jack123'), 'Jedi', 'medium'),
-      ((SELECT user_id FROM Users WHERE username = 'bobwalker'), 'Bob', 'large')
-
+        ((SELECT user_id FROM Users WHERE username = 'bobwalker'), 'Bob', 'large')
     `);
 
 
@@ -142,9 +140,9 @@ let db;
     `);
 
         await db.execute(`INSERT INTO WalkRatings (request_id,walker_id,owner_id,rating,comments) VALUES (
-    (SELECT request_id FROM WalkRequests WHERE dog_id=(SELECT dog_id FROM Dogs WHERE name='Bob')),
-    (SELECT user_id FROM Users WHERE username='bobwalker'),
-    (SELECT user_id FROM Users WHERE username = 'bobwalker'),
+        (SELECT request_id FROM WalkRequests WHERE dog_id=(SELECT dog_id FROM Dogs WHERE name='Bob')),
+        (SELECT user_id FROM Users WHERE username='bobwalker'),
+        (SELECT user_id FROM Users WHERE username = 'bobwalker'),
     5,'no comments'
 
         )
