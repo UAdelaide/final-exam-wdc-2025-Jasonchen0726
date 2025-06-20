@@ -47,8 +47,8 @@ router.get('/me', (req, res) => {
 // it get the data from the request
 // then it run sql commands to check within the database
 // if the request body is matched within the database
-//  it will get the row data including fields like user_id
-// then apply the data in the session and send the response
+// it will get the row data including fields like user_id....
+// then store the data in the session and send the response
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
