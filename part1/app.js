@@ -139,7 +139,9 @@ app.get('/api/dogs', async (req, res) => {
 app.get('/api/walkrequests/open', async (req, res) => {
     try {
         const [rows] = await db.execute(` SELECT wr.request_id, d.name AS dog_name, wr.request_time, wr.duration_minutes, wr.location FROM WalkRequests wr
-        JOIN Dogs d ON wr.dog_id=d.dog.id WHERE wr.status='open'`);
+        JOIN Dogs d ON wr.dog_id=d.dog.id
+
+        WHERE wr.status='open'`);
         res.json(rows);
 
     } catch (err) {
