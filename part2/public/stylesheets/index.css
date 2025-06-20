@@ -70,3 +70,11 @@
       margin-bottom: 30px;
 }
 
+.dog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dog-table th, 
