@@ -151,6 +151,7 @@
           try {
             const verify = await fetch('/api/users/me');
             if (!verify.ok) {
+             alert("You are not log in");
               window.location.href = 'index.html';
               return;
             }
