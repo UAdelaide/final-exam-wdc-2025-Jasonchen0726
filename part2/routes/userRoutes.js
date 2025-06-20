@@ -95,7 +95,8 @@ router.post('/logout', (req, res) => {
 
 // router for user's dogs
 // for owners
-// from the request
+// it first check the session of the current login user
+// if ok, from the request
 
 
 router.get('/mydogs', async (req, res) => {
