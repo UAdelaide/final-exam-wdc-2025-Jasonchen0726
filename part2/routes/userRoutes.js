@@ -79,7 +79,7 @@ router.post('/logout', (req, res) => {
   });
 });
 
-router.get('/')
+router.get('/mydogs')
 
 
 
