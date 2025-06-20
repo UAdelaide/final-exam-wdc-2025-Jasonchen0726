@@ -81,8 +81,9 @@ router.post('/logout', (req, res) => {
 
 router.get('/mydogs',async(req,res) =>{
   if(!req.session.user){
-    return res.status(401).json({Error:})
+    return res.status(401).json({error: 'not login in'});
   }
+  const owner
 })
 
 
