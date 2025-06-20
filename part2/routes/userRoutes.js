@@ -93,6 +93,8 @@ router.post('/logout', (req, res) => {
 });
 
 
+// router for user's dogs
+// for owners
 
 
 
