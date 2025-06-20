@@ -88,7 +88,7 @@
                    const photoData= await photoRes.json();
                   return { ...dog, photo: photoData.message };
                 }catch{
-                  return {..dog,photo:''};
+                  return {..dog, photo: ''};
                 }
               })
             )
