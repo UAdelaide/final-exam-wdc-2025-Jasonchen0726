@@ -3,7 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-// database module 
+// database module follow starthere files
 var mysql = require('mysql2/promise');
 
 var indexRouter = require('./routes/index');
@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// same set up fo
 let db;
 
 (async () => {
