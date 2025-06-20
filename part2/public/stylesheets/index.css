@@ -28,22 +28,22 @@
     font-size: 1.1rem;
 }
 
-    .login-container button {
-      width: 100%;
-      padding: 1rem;
-      font-size: 1.2rem;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+.login-container button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-    .login-container input{
-        width: 100%;
-padding: 1em;
-border-radius: 8px;
-margin-bottom: 1.5rem;
-box-sizing: border-box;
-      border: 1px solid #ccc;
-    }
+.login-container input {
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
