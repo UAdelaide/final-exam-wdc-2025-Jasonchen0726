@@ -16,7 +16,7 @@ body {
 .button {
     font-size: 13px;
     cursor: pointer;
-    position: inherit;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     height: 30px;
