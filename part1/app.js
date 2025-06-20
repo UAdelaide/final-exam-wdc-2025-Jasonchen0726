@@ -29,6 +29,7 @@ let db;
         await connection.query('CREATE DATABASE IF NOT EXISTS DogWalkService');
         await connection.end();
 
+        // egt connection again and start to add tables
         db = await mysql.createConnection({
             host: 'localhost',
             user: 'root',
