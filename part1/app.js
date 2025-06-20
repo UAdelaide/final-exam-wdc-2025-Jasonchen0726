@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// same set up fo
+// same set up as starthere
 let db;
 
 (async () => {
