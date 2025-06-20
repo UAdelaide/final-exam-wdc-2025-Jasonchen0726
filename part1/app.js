@@ -85,7 +85,9 @@ let db;
       )
     `);
 
-    await db.execute()
+    await db.execute(`
+      CREATE TABLE IF NOT EXISTS Walk
+    `)
 
 
 
