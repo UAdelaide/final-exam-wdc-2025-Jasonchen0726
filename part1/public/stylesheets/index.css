@@ -1,8 +1,13 @@
-body{
+body {
     background: yellow;
-                color: black;
-            padding: 20px;
-            min-height: 1000px;
+    color: black;
+    padding: 20px;
+    min-height: 1000px;
 }
 
 
+.dogImage {
+    width: 300px;
+    margin: 20px 0;
+    border: none;
+}
