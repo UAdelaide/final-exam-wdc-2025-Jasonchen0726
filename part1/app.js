@@ -191,7 +191,7 @@ app.get('/api/walkers/summary', async (req, res) => {
             ROUND(AVG(wr.rating),1) AS average_rating,
 
             (SELECT COUNT(*) FROM WalkRequests req JOIN WalkRatings wr ON wr.request_id =req.request_id
-            WHERE r.walker_id =u.user_id AND req.status ='completed') AS completed_walks
+            WHERE wr.walker_id =u.user_id AND req.status ='completed') AS completed_walks
 
             FROM Users u LEFT JOIN WalkRatings wr ON wr.walker_id = u.user_id
             WHERE u.role='walker'
