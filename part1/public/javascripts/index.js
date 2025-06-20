@@ -18,4 +18,4 @@ createApp({
             }
         }
     }
-}).mount
+}).mount("#app");
