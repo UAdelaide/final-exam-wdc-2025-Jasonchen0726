@@ -59,6 +59,8 @@
             if(!res.ok){
               throw new Error('Not logged in');
             }
+            const data=await res.json();
+            userId.value=
           }
         }
 
