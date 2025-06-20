@@ -77,4 +77,8 @@
   text-align: center;
 }
 
-.dog-table th, 
+.dog-table th,
+.dog-table td{
+      border: 1px solid #ccc;
+  padding: 10px;
+}
