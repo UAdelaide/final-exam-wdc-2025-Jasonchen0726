@@ -165,7 +165,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 });
 
 
-app.get(`)
+app.get('/api/walkers')
 
 
 
