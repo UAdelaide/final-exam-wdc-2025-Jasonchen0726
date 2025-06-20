@@ -24,6 +24,7 @@ form input {
 }
 
 form button {
+    height: 80px;
     width: 100px;
     padding: 10px;
     font-size: 20px;
