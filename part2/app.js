@@ -19,9 +19,8 @@ app.use(session({
   cookie: { secure: false }
 }));
 
-app.use((req, res, next) => {
+app.use((req, res) => {
   console.log('Session data:', req.session);
-  next();
 });
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
