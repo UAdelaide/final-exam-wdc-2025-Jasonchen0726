@@ -143,11 +143,8 @@ let db;
         (SELECT request_id FROM WalkRequests WHERE dog_id=(SELECT dog_id FROM Dogs WHERE name='Bob')),
         (SELECT user_id FROM Users WHERE username='bobwalker'),
         (SELECT user_id FROM Users WHERE username = 'bobwalker'),
-    5,'no comments'
-
-        )
-
-`);
+        5,'no comments')
+    `);
 
 
 
