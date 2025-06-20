@@ -76,8 +76,11 @@ router.post('/login', async (req, res) => {
 });
 
 // router for user log out
+// use for both web pages
 // from the frontend requests
-// it destroy the session, erases the cookie data and returns to the login form.
+// it destroy the session
+// erases the cookie data
+// returns to the login form.
 
 router.post('/logout', (req, res) => {
   req.session.destroy(err => {
