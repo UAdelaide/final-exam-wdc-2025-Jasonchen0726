@@ -173,7 +173,8 @@
 
 
 
-// this is also added for user login feature, the purpose is to check if the user has login in or not, this will prevent to 
+// this is also added for user login feature,
+// the purpose is to check if the user has login in or not, this will prevent to owner page or walker page
         onMounted(async () => {
           try {
             const verify = await fetch('/api/users/me');
