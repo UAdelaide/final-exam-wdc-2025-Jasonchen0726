@@ -9,7 +9,9 @@ createApp({
     },
     methods(){
         async getImage(){
-            
+            try{
+                const res=await fetch('http')
+            }
         }
     }
 })
