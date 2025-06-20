@@ -145,11 +145,6 @@ let db;
         (SELECT user_id FROM Users WHERE username = 'bobwalker'),
         5,'no comments')
     `);
-
-
-
-
-
         console.log('Database setup');
     } catch (err) {
         console.error('setup failed', err);
