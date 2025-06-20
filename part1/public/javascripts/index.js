@@ -7,5 +7,7 @@ createApp({
             dogImage:''
         };
     },
-    methods()
+    methods(){
+        async getImage
+    }
 })
