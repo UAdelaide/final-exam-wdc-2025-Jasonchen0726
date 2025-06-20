@@ -152,6 +152,7 @@ let db;
     }
 })();
 
+// Return a list of all dogs with their size and owner's username.
 app.get('/api/dogs', async (req, res) => {
     try {
         const [rows] = await db.execute(`
