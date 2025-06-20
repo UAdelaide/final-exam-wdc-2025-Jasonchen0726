@@ -3,7 +3,7 @@ form {
     padding: 2.5rem;
     border-radius: 14px;
     width: 100%;
-    max-width: 420px;
+    max-width: 600px;
     margin: 2rem auto;
 }
 
@@ -24,7 +24,7 @@ form input {
 }
 
 form button {
-    width: 100%;
+    width: 100px;
     padding: 1rem;
     font-size: 1.2rem;
     background-color: #007bff;
