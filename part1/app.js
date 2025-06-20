@@ -111,22 +111,22 @@ let db;
         // insert table data
         await db.execute(`
         INSERT INTO Users (username, email, password_hash, role) VALUES
-      ('alice123', 'alice@example.com', 'hashed123', 'owner'),
-      ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
-      ('carol123', 'carol@example.com', 'hashed789', 'owner'),
-      ('jason123', 'jason@hotmail.com', 'hashed234', 'walker'),
-      ('jack123', 'jack@hotmail.com', 'hashed678', 'owner')
+        ('alice123', 'alice@example.com', 'hashed123', 'owner'),
+        ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
+        ('carol123', 'carol@example.com', 'hashed789', 'owner'),
+        ('jason123', 'jason@hotmail.com', 'hashed234', 'walker'),
+        ('jack123', 'jack@hotmail.com', 'hashed678', 'owner')
 
     `);
 
 
         await db.execute(`
-      INSERT INTO Dogs (owner_id,name,size) VALUES
-      ((SELECT user_id FROM Users WHERE username='alice123'), 'Max', 'medium'),
-      ((SELECT user_id FROM Users WHERE username='alice123'), 'Big Max', 'large'),
-      ((SELECT user_id FROM Users WHERE username='carol123'), 'Bella', 'small'),
-      ((SELECT user_id FROM Users WHERE username = 'jason123'), 'Toby', 'large'),
-      ((SELECT user_id FROM Users WHERE username = 'jack123'), 'Jedi', 'medium'),
+        INSERT INTO Dogs (owner_id,name,size) VALUES
+        ((SELECT user_id FROM Users WHERE username='alice123'), 'Max', 'medium'),
+        ((SELECT user_id FROM Users WHERE username='alice123'), 'Big Max', 'large'),
+        ((SELECT user_id FROM Users WHERE username='carol123'), 'Bella', 'small'),
+        ((SELECT user_id FROM Users WHERE username = 'jason123'), 'Toby', 'large'),
+        ((SELECT user_id FROM Users WHERE username = 'jack123'), 'Jedi', 'medium'),
       ((SELECT user_id FROM Users WHERE username = 'bobwalker'), 'Bob', 'large')
 
     `);
