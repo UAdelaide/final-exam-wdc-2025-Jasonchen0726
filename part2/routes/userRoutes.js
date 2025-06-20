@@ -96,28 +96,28 @@ router.post('/logout', (req, res) => {
 
 
 
-router.get('/mydogs',async(req,res) => {
-  if(!req.session.user){
-    return res.status(401).json({error: 'not login in'});
+router.get('/mydogs', async (req, res) => {
+  if (!req.session.user) {
+    return res.status(401).json({ error: 'not login in' });
   }
-  const ownerId=req.session.user.id;
-  try{
-    const[dogs]=await db.query('SELECT dog_id, name FROM Dogs WHERE owner_id = ?', [ownerId]);
+  const ownerId = req.session.user.id;
+  try {
+    const [dogs] = await db.query('SELECT dog_id, name FROM Dogs WHERE owner_id = ?', [ownerId]);
     res.json(dogs);
-  }catch(err){
-    res.status(500).json({error:'fail to get dogs'});
+  } catch (err) {
+    res.status(500).json({ error: 'fail to get dogs' });
   }
 });
 
 
 
 router.get('/getdogs', async (req, res) => {
-    try {
-const [rows] = await db.query('SELECT dog_id, name, size,  owner_id FROM Dogs');
-        res.json(rows);
-    } catch (err) {
-        res.status(500).json({ error: 'api failed' });
-    }
+  try {
+    const [rows] = await db.query('SELECT dog_id, name, size,  owner_id FROM Dogs');
+    res.json(rows);
+  } catch (err) {
+    res.status(500).json({ error: 'api failed' });
+  }
 });
 
 
