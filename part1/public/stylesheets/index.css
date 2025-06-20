@@ -39,3 +39,8 @@ body {
 h1 {
     text-align: center;
 }
+
+
+.image-container{
+    align-items: center;
+}
