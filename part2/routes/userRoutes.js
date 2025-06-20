@@ -79,7 +79,7 @@ router.post('/logout', (req, res) => {
   });
 });
 
-router.
+router.get('/')
 
 
 
