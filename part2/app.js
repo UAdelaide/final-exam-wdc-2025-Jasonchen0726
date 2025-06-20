@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 require('dotenv').config();
 
-// 
+// module 
 const session=require('express-session');
 
 const app = express();
@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
-// new session
+// the expression session for user login
 app.use(session({
   secret: 'DOGWALKINGSERVICE_THEKEY',
   resave: false,
