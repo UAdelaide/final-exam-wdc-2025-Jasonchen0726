@@ -131,7 +131,9 @@
               headers: { 'Content-Type': 'application/json' }
             });
             const data=await res.json;
-            if
+            if(res.ok){
+              window.location.href=''
+            }
           }
         }
 
