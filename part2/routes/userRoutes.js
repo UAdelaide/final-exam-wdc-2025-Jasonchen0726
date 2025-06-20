@@ -44,7 +44,7 @@ router.get('/me', (req, res) => {
 
 
 // router for user login
-// it
+// it get the data from the request 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
