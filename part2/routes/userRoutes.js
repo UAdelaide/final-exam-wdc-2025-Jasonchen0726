@@ -45,7 +45,8 @@ router.get('/me', (req, res) => {
 
 // router for user login
 // it get the data from the request and run sql commands
-// to within the database 
+// to within the database
+// if the request is matched with the 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
