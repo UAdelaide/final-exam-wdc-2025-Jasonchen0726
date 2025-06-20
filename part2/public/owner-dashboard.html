@@ -151,8 +151,11 @@
           try{
             const verify=await fetch('/api/users/me');
             if(!verify.ok){
-              window.location
+              window.location.href='index.html';
+              return;
             }
+          }catch(err){
+            
           }
           loadWalks();
         });
