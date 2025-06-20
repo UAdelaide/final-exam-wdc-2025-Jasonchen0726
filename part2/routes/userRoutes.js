@@ -96,7 +96,8 @@ router.post('/logout', (req, res) => {
 // router for user's dogs
 // for owners
 // it first check the session of the current login user
-// if ok, it get owner_id from the request
+// if ok, it get current login user's owner_id from the session
+// and run sql query 
 
 
 router.get('/mydogs', async (req, res) => {
