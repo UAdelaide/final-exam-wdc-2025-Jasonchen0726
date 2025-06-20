@@ -119,6 +119,7 @@
         // function to get current login user's dogs
         // it will fetch an backend route
         // if the response from the route is ok
+        // then it will just store the response data into the corresponding array
         async function loadDogs() {
           try {
             const res = await fetch('/api/users/mydogs');
