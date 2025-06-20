@@ -113,7 +113,11 @@
 
         async function loadDogs(){
           try{
-            const res=await fetch('/api/user/')
+            const res=await fetch('/api/user/mydogs');
+            if(!res.ok){
+              
+
+            }
 
           }catch(err){
             console.log("Error to load dogs")
