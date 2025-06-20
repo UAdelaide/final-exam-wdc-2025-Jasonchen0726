@@ -101,14 +101,14 @@ let db;
       )
     `);
 
-
+// clear table for everytime
         await db.execute('DELETE FROM WalkRatings');
         await db.execute('DELETE FROM WalkApplications');
         await db.execute('DELETE FROM WalkRequests');
         await db.execute('DELETE FROM Dogs');
         await db.execute('DELETE FROM Users');
 
-
+// insert 
         await db.execute(`
       INSERT INTO Users (username, email, password_hash, role) VALUES
       ('alice123', 'alice@example.com', 'hashed123', 'owner'),
