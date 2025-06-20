@@ -20,19 +20,19 @@
 
     <!-- remove the button in the original page -->
 
-<!--        <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
+    <!--        <a href="owner-dashboard.html" class="btn btn-outline-primary me-2">Owner Dashboard</a>
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>-->
 
 
 
     <!-- submit form for login -->
-      <form @submit.prevent="userLogin">
-        <label for="username"> Username</label>
-        <input type="text" id="username" v-model="username" placeholder="Enter your Username" required>
-        <label for="password"> Password</label>
-        <input type="password" id="password" v-model="password" placeholder="Enter your Password" required>
-        <button type="submit">Login</button>
-      </form>
+    <form @submit.prevent="userLogin">
+      <label for="username"> Username</label>
+      <input type="text" id="username" v-model="username" placeholder="Enter your Username" required>
+      <label for="password"> Password</label>
+      <input type="password" id="password" v-model="password" placeholder="Enter your Password" required>
+      <button type="submit">Login</button>
+    </form>
 
 
 
@@ -92,7 +92,7 @@
                   const photoData = await photoRes.json();
                   return { ...dog, photo: photoData.message };
                 } catch {
-                  return {...dog, photo: '' };
+                  return { ...dog, photo: '' };
                 }
               })
             )
