@@ -13,10 +13,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.use(session({
-  secret: 'Dog', // use env variable in real apps!
+  secret: 'DOGWALKINGSERVICE_THEKEY', // use env variable in real apps!
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false } // Set to true only with HTTPS
+  cookie: { secure: false }
 }));
 
 // Routes
