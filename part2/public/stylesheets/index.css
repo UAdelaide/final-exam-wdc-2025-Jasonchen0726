@@ -13,9 +13,28 @@
 }
 
 
-.login-container h2{
+.login-container h2 {
     text-align: center;
     color: black;
     margin-bottom: 2em;
-          font-size: 2rem;
+    font-size: 2rem;
 }
+
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+    .login-container button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.2rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
