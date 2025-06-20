@@ -65,7 +65,7 @@
     </div>
     <p v-else>No walk requests yet.</p>
     <div class="text-center">
-      <button  @click="logout" type="button" id="logoutBtn" class="btn btn-success" style="margin:auto">Logout</button>
+      <button @click="logout" type="button" id="logoutBtn" class="btn btn-success" style="margin:auto">Logout</button>
     </div>
 
 
@@ -130,13 +130,13 @@
               method: 'POST',
               headers: { 'Content-Type': 'application/json' }
             });
-            const data=await res.json();
-            if(res.ok){
-              window.location.href='index.html';
-            }else{
+            const data = await res.json();
+            if (res.ok) {
+              window.location.href = 'index.html';
+            } else {
               alert("logout failed");
             }
-          }catch(err){
+          } catch (err) {
             alert("server error");
           }
         }
