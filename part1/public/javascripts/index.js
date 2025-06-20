@@ -14,8 +14,8 @@ createApp({
                 const data=await res.json();
                 this.dogImage = data.message;
             } catch(err){
-                
+                alert("fail to load image");
             }
         }
     }
-})
+}).mount
