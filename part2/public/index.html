@@ -81,7 +81,11 @@
             const dogList=await response.json();
 
 
-            const dogsWithPhotos=await Promise.all()
+            const dogsWithPhotos=await Promise.all(
+              dogList.map(async dog => {
+                
+              })
+            )
           }catch(err){
              console.error('Failed to fetch dogs:', err);
           }
