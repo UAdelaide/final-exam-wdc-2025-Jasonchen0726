@@ -85,7 +85,7 @@ router.get('/mydogs',async(req,res) =>{
   }
   const ownerId=req.session.user.id;
   try{
-    cons
+    const[dogs]=await db.query('')
   }
 })
 
