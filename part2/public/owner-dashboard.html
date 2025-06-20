@@ -115,9 +115,10 @@
           try{
             const res=await fetch('/api/user/mydogs');
             if(!res.ok){
-              
+
 
             }
+            dogs.value=await res.json();
 
           }catch(err){
             console.log("Error to load dogs")
