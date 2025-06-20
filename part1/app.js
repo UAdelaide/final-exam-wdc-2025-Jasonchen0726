@@ -20,6 +20,7 @@ let db;
 
 (async () => {
     try {
+        // get connection and check if the database exist
         const connection = await mysql.createConnection({
             host: 'localhost',
             user: 'root',
