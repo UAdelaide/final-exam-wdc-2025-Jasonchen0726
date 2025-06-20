@@ -153,7 +153,6 @@ app.get('/api/walkrequests/open', async (req, res) => {
         `);
         res.json(rows);
     } catch (err) {
-        console.error('SQL Error:', err);
         res.status(500).json({ error: 'API failed for walk requests' });
     }
 });
