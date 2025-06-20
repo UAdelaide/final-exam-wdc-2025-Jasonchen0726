@@ -86,7 +86,8 @@ let db;
     `);
 
     await db.execute(`
-      CREATE TABLE IF NOT EXISTS Walk
+      CREATE TABLE IF NOT EXISTS WalkApplications(
+      )
     `)
 
 
