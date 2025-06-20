@@ -95,7 +95,7 @@ router.post('/logout', (req, res) => {
 
 // router for user's dogs
 // for owners
-
+// from the request
 
 
 router.get('/mydogs', async (req, res) => {
