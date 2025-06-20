@@ -160,15 +160,15 @@ app.get('/api/walkrequests/open', async (req, res) => {
         `);
         res.json(rows);
     } catch (err) {
-        res.status(500).json({ error: 'API failed for walk requests' });
+        res.status(500).json({ error: 'api failed for walk requests' });
     }
 });
 
 
 app.get('/api/walkers/summary',async(req,res)=>{
     try{
-        const[rows]=await db.execute( `)
-    }
+        const[rows]=await db.execute(` `)
+    } catch(err)
 })
 
 
