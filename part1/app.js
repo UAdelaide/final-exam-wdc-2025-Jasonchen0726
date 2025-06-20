@@ -6,6 +6,7 @@ var mysql = require('mysql2/promise');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const { asyncWrapProviders } = require('async_hooks');
 
 var app = express();
 
@@ -68,7 +69,8 @@ let db;
     )
     `);
 
-    
+    await db.execute()
+
 
 
         }
