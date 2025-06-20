@@ -115,7 +115,10 @@ let db;
     `);
 
 
-    a
+    await db.execute(`INSERT INTO `
+
+
+    )
 
 
 
