@@ -134,6 +134,13 @@ let db;
 ((SELECT dog_id FROM Dogs WHERE name = 'Jedi'), '2025-06-10 12:30:00', 90, 'City Park', 'open')
 
     `);
+
+await db.execute()
+
+
+
+
+
         console.log('Database setup');
     } catch (err) {
         console.error('setup failed', err);
