@@ -97,9 +97,8 @@ router.post('/logout', (req, res) => {
 // for owners
 // it first check the session of the current login user
 // if ok, it get current login user's owner_id from the session
-// and run sql query 
-
-
+// and run sql query with teh owner_id to get user's dogs
+// send the data to the frontend
 router.get('/mydogs', async (req, res) => {
   if (!req.session.user) {
     return res.status(401).json({ error: 'not login in' });
