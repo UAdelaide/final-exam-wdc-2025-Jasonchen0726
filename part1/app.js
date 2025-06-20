@@ -66,7 +66,9 @@ let db;
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (dog_id) REFERENCES Dogs(dog_id)
     )
-    `)
+    `);
+
+    
 
 
         }
