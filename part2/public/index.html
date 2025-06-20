@@ -78,7 +78,11 @@
         async getDogs(){
           try{
             const response=await fetch('/api/users/getdogs')
-            const dogList=await 
+            const dogList=await response.json();
+          }catch(err){
+
+            
+             console.error('Failed to fetch dogs:', err);
           }
         }
 
