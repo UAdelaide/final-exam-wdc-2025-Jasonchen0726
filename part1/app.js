@@ -97,7 +97,7 @@ let db;
     `);
 
 
-await db.execute
+await db.execute(`DELETE FROM Users`)
 
 
         await db.execute(`
