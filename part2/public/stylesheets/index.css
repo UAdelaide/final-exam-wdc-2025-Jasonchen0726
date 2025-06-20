@@ -54,3 +54,8 @@
 .no-dogs-text{
     text-align:center;
 }
+
+.dog-photo {
+  width: 150px;
+  border-radius: 8px;
+}
