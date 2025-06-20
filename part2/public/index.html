@@ -24,7 +24,9 @@
     <a href="walker-dashboard.html" class="btn btn-outline-success">Walker Dashboard</a>-->
 
 
-      <form @submit.prevent="handleLogin">
+
+    <!-- remove the button in the original page -->
+      <form @submit.prevent="userLogin">
         <label for="username"> Username</label>
         <input type="text" id="username" v-model="username" placeholder="Enter your Username" required>
         <label for="password"> Password</label>
