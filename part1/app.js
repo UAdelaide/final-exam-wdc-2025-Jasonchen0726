@@ -99,7 +99,8 @@ let db;
 
 await db.execute(`DELETE FROM Users`);
 await db.execute(`DELETE FROM Dogs`);
-await db.execute(``)
+await db.execute(`DELETE FROM WalkRequests`);
+await db.execute()
 await db.execute(`DELETE FROM WalkRatings`);
 
 
