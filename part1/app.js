@@ -143,10 +143,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
         res.json(rows);
 
     } catch (err) {
-        
+        res.status(500).json({ error: 'api failed for walk requests' });
 
     }
-
 });
 
 
