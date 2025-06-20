@@ -80,7 +80,9 @@ router.post('/logout', (req, res) => {
 });
 
 router.get('/mydogs',async(req,res) =>{
-  
+  if(!req.session.user){
+    
+  }
 })
 
 
