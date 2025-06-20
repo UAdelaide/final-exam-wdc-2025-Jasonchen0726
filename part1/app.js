@@ -126,7 +126,7 @@ let db;
 app.get('/api/dogs', async (req, res) => {
     try {
         const [rows] = await db.execute(`
-      SELECT d.dog_id, d.name, d.size, u.username AS owner
+      SELECT d.name, d.size, u.username 
       FROM Dogs d JOIN Users u ON d.owner_id = u.user_id
     `);
         res.json(rows);
@@ -138,7 +138,7 @@ app.get('/api/dogs', async (req, res) => {
 
 app.get('/api/walkrequests/open', async(req,res)=>{
     try{
-        const[rows]=await db.execute(` SELECT wr.request_id, d.name 
+        const[rows]=await db.execute(` SELECT wr.request_id, d.name
 
              `
 
