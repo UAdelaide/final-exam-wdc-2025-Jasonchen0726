@@ -85,7 +85,7 @@
         // modified version, instead of hard code of given walkerID
         // it first check if the data exists
         // if exists, instead of fetch the backend route by passing the hard code data as the walker_id
-// use the userID which is 
+// use the userID which gets from getCurrentUser method when the page is loaded
         async function applyToWalk(requestId) {
           try {
             if (!userId.value) {
