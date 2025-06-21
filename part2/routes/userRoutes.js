@@ -113,7 +113,8 @@ router.get('/mydogs', async (req, res) => {
 });
 
 
-// router t
+// router from part1
+// it will run query to return
 
 router.get('/getdogs', async (req, res) => {
   try {
