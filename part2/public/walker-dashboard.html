@@ -82,7 +82,9 @@
           }
         }
 
-        // modified version, instead of hard code of user 
+        // modified version, instead of hard code of given walkerID
+        // it first check if the data exists
+        
         async function applyToWalk(requestId) {
           try {
             if (!userId.value) {
