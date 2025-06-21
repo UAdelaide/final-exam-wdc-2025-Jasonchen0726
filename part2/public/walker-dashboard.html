@@ -51,12 +51,13 @@
         const message = ref('');
         const error = ref('');
 
-        // hold for 
+        // hold for current user id
         const userId = ref(null);
         const user = 3;
 
 
-        //
+        // the function to fetch a backend route
+        // the
         async function getCurrentUser() {
           try {
             const res = await fetch('/api/users/me');
