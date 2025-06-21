@@ -93,7 +93,7 @@
             const dogList = await response.json();
 
 
-            const dogsAndPhotos = await Promise.all(
+            const dogsAndImages = await Promise.all(
               dogList.map(async dog => {
                 try {
                   const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
@@ -104,7 +104,7 @@
                 }
               })
             )
-            this.dogs = dogsAndPhotos;
+            this.dogs = dogsAndImages;
           } catch (err) {
             console.error('Failed to fetch dogs:', err);
           }
