@@ -33,7 +33,7 @@ form button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transform: x;
+    transform: translateX(100px);
 }
 
 form button:hover {
