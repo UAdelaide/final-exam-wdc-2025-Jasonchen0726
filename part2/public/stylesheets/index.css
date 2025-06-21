@@ -63,6 +63,7 @@ form button:hover {
 .dog-table {
     max-width: 600px;
     width: 100%;
+    border-collapse: collapse;
 
     margin: 0 auto;
     text-align: center;
