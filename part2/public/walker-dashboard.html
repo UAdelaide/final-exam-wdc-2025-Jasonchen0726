@@ -57,7 +57,8 @@
 
 
         // the function to fetch a backend route
-        // the backend route will check current user's 
+        // the backend route will check current user's session
+        // if exists then just send the session back as the response
         async function getCurrentUser() {
           try {
             const res = await fetch('/api/users/me');
