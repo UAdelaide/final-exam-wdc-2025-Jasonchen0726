@@ -54,7 +54,7 @@
             <td>{{dog.name}}</td>
             <td>{{dog.size}}</td>
             <td>{{ dog.owner_id }}</td>
-            <td><img :src="dog.photo" alt="Dog photo" class="dog-photo" /></td>
+            <td><img :src="dog.photo" alt="Dog image" class="dog-image" /></td>
           </tr>
 
         </tbody>
@@ -98,9 +98,9 @@
                 try {
                   const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
                   const imageData = await imageResponse.json();
-                  return { ...dog, photo: imageData.message };
+                  return { ...dog, image: imageData.message };
                 } catch {
-                  return { ...dog, photo: '' };
+                  return { ...dog, image: '' };
                 }
               })
             )
