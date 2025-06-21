@@ -85,7 +85,7 @@
         // modified version, instead of hard code of given walkerID
         // it first check if the data exists
         // if exists, instead of fetch the backend route by passing the hard code data as the walker_id
-// use the userID which gets from getCurrentUser method when the page is loaded
+        // use the userID which gets from getCurrentUser method when the page is loaded
         async function applyToWalk(requestId) {
           try {
             if (!userId.value) {
@@ -95,6 +95,7 @@
             const res = await fetch(`/api/walks/${requestId}/apply`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
+              // userID instead of hard code data
               body: JSON.stringify({ walker_id: userId.value })
             });
             const result = await res.json();
@@ -136,9 +137,9 @@
 
 
 
-// this is also added for user login feature,
-// the purpose is to check if the user has login in or not, this will prevent to owner page or walker page
-// by direct url access
+        // this is also added for user login feature,
+        // the purpose is to check if the user has login in or not, this will prevent to owner page or walker page
+        // by direct url access
 
 
         onMounted(async () => {
