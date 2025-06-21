@@ -114,7 +114,7 @@ router.get('/mydogs', async (req, res) => {
 
 
 // router from part1
-// it will run query to the database to return all the dogs in the database
+// it will run query to the database to return all the dogs in the data table
 
 router.get('/getdogs', async (req, res) => {
   try {
