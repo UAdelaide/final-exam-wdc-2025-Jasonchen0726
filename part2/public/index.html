@@ -96,9 +96,9 @@
             const dogsAndPhotos = await Promise.all(
               dogList.map(async dog => {
                 try {
-                  const photoResponse = await fetch('https://dog.ceo/api/breeds/image/random');
-                  const photoData = await photoResponse.json();
-                  return { ...dog, photo: photoData.message };
+                  const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
+                  const imageData = await imageResponse.json();
+                  return { ...dog, photo: imageData.message };
                 } catch {
                   return { ...dog, photo: '' };
                 }
