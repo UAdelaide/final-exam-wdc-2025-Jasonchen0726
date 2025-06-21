@@ -122,12 +122,12 @@
         // then it will just store the response data into the corresponding array
         async function loadDogs() {
           try {
-            const res = await fetch('/api/users/mydogs');
-            if (!res.ok) {
+            const response = await fetch('/api/users/mydogs');
+            if (!response.ok) {
               throw new Error('fail to load dogs');
 
             }
-            dogs.value = await res.json();
+            dogs.value = await response.json();
 
           } catch (err) {
             console.log("Error to load dogs")
