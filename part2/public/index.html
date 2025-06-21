@@ -83,12 +83,12 @@
       },
       methods: {
 
-// function for dog listing on the home page
-// it first fetch the backend route
-// which will return the information for all dogs
-// then it call the external API which will return random dog images
-// each dog will get an random image
-// the data will be combined and formed into the vue data array
+        // function for dog listing on the home page
+        // it first fetch the backend route
+        // which will return the information for all dogs
+        // then it call the external API which will return random dog images
+        // each dog will get an random image
+        // the data will be combined and maped into the vue data array
         async getDogs() {
           try {
             const response = await fetch('/api/users/getdogs')
