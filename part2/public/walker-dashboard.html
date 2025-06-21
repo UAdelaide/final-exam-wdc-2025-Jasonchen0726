@@ -61,11 +61,11 @@
         // if exists then just send the session back as the response
         async function getCurrentUser() {
           try {
-            const res = await fetch('/api/users/me');
-            if (!res.ok) {
+            const response = await fetch('/api/users/me');
+            if (!response.ok) {
               throw new Error('Not logged in');
             }
-            const data = await res.json();
+            const data = await response.json();
             userId.value = data.id
           } catch (err) {
             alert('log in required');
